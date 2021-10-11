@@ -13,34 +13,34 @@ Calculate the holidays of a country at runtime. No need to parse some special we
 This sample requests every german holiday, filters if it is a national one and sort it ascending.
 
 ```java
-		Country.GERMANY
-				.getHolidays()
-				.filter(holiday -> holiday.isNational())
-				.sorted((h1, h2) -> h1.getDate(2014)
-						.compareTo(h2.getDate(2014)))
-				.map(holiday -> holiday.getDate(2014))
-				.forEach(System.out::println);
+Country.GERMANY.getHolidays()
+        .filter(holiday -> holiday.isNational())
+        .map(holiday -> holiday.getDate(2021))
+        .sorted()
+        .forEach(System.out::println);
 ```
 
 The Result:
-<pre>Wed Jan 01 15:39:44 CET 2014
-Mon Jan 06 15:39:44 CET 2014
-Fri Apr 18 15:39:44 CEST 2014
-Sun Apr 20 15:39:44 CEST 2014
-Mon Apr 21 15:39:44 CEST 2014
-Thu May 01 15:39:44 CEST 2014
-Thu May 29 15:39:44 CEST 2014
-Sun Jun 08 15:39:44 CEST 2014
-Mon Jun 09 15:39:44 CEST 2014
-Thu Jun 19 15:39:44 CEST 2014
-Fri Aug 15 15:39:44 CEST 2014
-Fri Oct 03 15:39:44 CEST 2014
-Fri Oct 31 15:39:44 CET 2014
-Sat Nov 01 15:39:44 CET 2014
-Wed Nov 19 15:39:44 CET 2014
-Thu Dec 25 15:39:44 CET 2014
-Fri Dec 26 15:39:44 CET 2014
-Sat Dec 27 15:39:44 CET 2014</pre>
+<pre>
+2021-01-01
+2021-01-06
+2021-04-04
+2021-04-05
+2021-04-06
+2021-05-01
+2021-05-13
+2021-05-23
+2021-05-24
+2021-06-03
+2021-08-15
+2021-10-03
+2021-10-31
+2021-11-01
+2021-11-17
+2021-12-25
+2021-12-26
+2021-12-27
+</pre>
 
 License
 =======

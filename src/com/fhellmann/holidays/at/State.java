@@ -12,22 +12,22 @@ import com.fhellmann.holidays.IState;
  *
  */
 public enum State implements IState {
-	/** Voralberg */
-	VORARLBERG,
-	/** Tirol */
-	TYROL,
-	/** Salzburg */
-	SALZBURG,
-	/** Oberösterreich */
-	UPPER_AUSTRIA,
-	/** Niederösterreich */
-	LOWER_AUSTRIA,
-	/** Wien */
-	VIENNA,
-	/** Burgenland */
-	BURGENLAND,
-	/** Steiermark */
-	STYRIA,
-	/** Kärnten */
-	CARINTHIA
+    /** Voralberg */
+    VORARLBERG,
+    /** Tirol */
+    TYROL,
+    /** Salzburg */
+    SALZBURG,
+    /** Oberösterreich */
+    UPPER_AUSTRIA,
+    /** Niederösterreich */
+    LOWER_AUSTRIA,
+    /** Wien */
+    VIENNA,
+    /** Burgenland */
+    BURGENLAND,
+    /** Steiermark */
+    STYRIA,
+    /** Kärnten */
+    CARINTHIA
 }

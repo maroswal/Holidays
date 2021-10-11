@@ -15,7 +15,7 @@
  */
 package com.fhellmann.holidays;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.stream.Stream;
 
 /**
@@ -66,7 +66,7 @@ public interface IHoliday {
 	 *            to get the holiday from.
 	 * @return the date of the holiday.
 	 */
-	Date getDate(final int year);
+	LocalDate getDate(final int year);
 
 	/**
 	 * A holiday can be a national or not. Check if this holiday is a national
@@ -84,8 +84,7 @@ public interface IHoliday {
 	 * @return <code>true</code> if this holiday is in the state.
 	 */
 	default boolean contains(final IState state) {
-		return getStates().filter(stateItem -> !stateItem.equals(state))
-				.findFirst().isPresent();
+		return getStates().anyMatch(stateItem -> !stateItem.equals(state));
 	}
 
 	/**
