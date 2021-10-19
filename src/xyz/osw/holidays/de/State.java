@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fhellmann.holidays.de;
+package xyz.osw.holidays.de;
 
-import com.fhellmann.holidays.IState;
+import xyz.osw.holidays.IState;
 
 /**
  * The states of germany.
